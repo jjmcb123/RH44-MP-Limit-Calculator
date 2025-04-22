@@ -30,4 +30,4 @@ temp_input = st.number_input("Outside Air Temperature (°C)", min_value=-50, max
 
 if st.button("Calculate"):
     result = interp_func((alt_input, temp_input))
-    st.success(f"Estimated Manifold Pressure: {result[0]:.2f} in. Hg")
+    st.success(f"Estimated Manifold Pressure: {result:.2f} in. Hg")
